@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <meta name="author" content="Roshan Raj" />
+    <title>Course Builder</title>
+    <script defer="defer" src="main.js"></script>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="wrapper flex justify-center w-full p-10">
+            <div class="screen w-full lg:w-[65%] md:w-[80%] space-y-8">
+                <div class="header flex items-center justify-between">
+                    <div class="brand font-bold text-xl" id="header">Course builder:</div>
+                    <div class="add-button relative"><button
+                            class="bg-[#d33852] add-button text-white flex gap-x-2 text-sm items-center p-2 rounded-md"><svg
+                                width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="size-5">
+                                <path
+                                    d="M8 2.75C8 2.47386 7.77614 2.25 7.5 2.25C7.22386 2.25 7 2.47386 7 2.75V7H2.75C2.47386 7 2.25 7.22386 2.25 7.5C2.25 7.77614 2.47386 8 2.75 8H7V12.25C7 12.5261 7.22386 12.75 7.5 12.75C7.77614 12.75 8 12.5261 8 12.25V8H12.25C12.5261 8 12.75 7.77614 12.75 7.5C12.75 7.22386 12.5261 7 12.25 7H8V2.75Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>Add<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="font-bold size-5">
+                                <path
+                                    d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z"
+                                    fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg></button>
+                        <div
+                            class="opacity-0 invisible  z-30 absolute w-[262px] bg-white p-2 rounded-md top-12 shadow-lg border-2 border-slate-100 right-0 transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                            <button
+                                class="flex text-sm items-center gap-x-2 p-2 text-[#717171] hover:text-[#222222] hover:bg-gray-100 rounded-md w-full"><svg
+                                    width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="size-4">
+                                    <path
+                                        d="M1.5 2H13.5C13.7761 2 14 2.22386 14 2.5V7H1V2.5C1 2.22386 1.22386 2 1.5 2ZM1 8V12.5C1 12.7761 1.22386 13 1.5 13H13.5C13.7761 13 14 12.7761 14 12.5V8H1ZM0 2.5C0 1.67157 0.671573 1 1.5 1H13.5C14.3284 1 15 1.67157 15 2.5V12.5C15 13.3284 14.3284 14 13.5 14H1.5C0.671573 14 0 13.3284 0 12.5V2.5Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>Create module</button><button
+                                class="flex text-sm items-center gap-x-2 p-2 text-[#717171] hover:text-[#222222] hover:bg-gray-100 rounded-md w-full"><svg
+                                    width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="size-4">
+                                    <path
+                                        d="M8.51194 3.00541C9.18829 2.54594 10.0435 2.53694 10.6788 2.95419C10.8231 3.04893 10.9771 3.1993 11.389 3.61119C11.8009 4.02307 11.9513 4.17714 12.046 4.32141C12.4633 4.95675 12.4543 5.81192 11.9948 6.48827C11.8899 6.64264 11.7276 6.80811 11.3006 7.23511L10.6819 7.85383C10.4867 8.04909 10.4867 8.36567 10.6819 8.56093C10.8772 8.7562 11.1938 8.7562 11.389 8.56093L12.0077 7.94221L12.0507 7.89929C12.4203 7.52976 12.6568 7.2933 12.822 7.0502C13.4972 6.05623 13.5321 4.76252 12.8819 3.77248C12.7233 3.53102 12.4922 3.30001 12.1408 2.94871L12.0961 2.90408L12.0515 2.85942C11.7002 2.508 11.4692 2.27689 11.2277 2.11832C10.2377 1.46813 8.94398 1.50299 7.95001 2.17822C7.70691 2.34336 7.47044 2.57991 7.1009 2.94955L7.058 2.99247L6.43928 3.61119C6.24401 3.80645 6.24401 4.12303 6.43928 4.31829C6.63454 4.51355 6.95112 4.51355 7.14638 4.31829L7.7651 3.69957C8.1921 3.27257 8.35757 3.11027 8.51194 3.00541ZM4.31796 7.14672C4.51322 6.95146 4.51322 6.63487 4.31796 6.43961C4.12269 6.24435 3.80611 6.24435 3.61085 6.43961L2.99213 7.05833L2.94922 7.10124C2.57957 7.47077 2.34303 7.70724 2.17788 7.95035C1.50265 8.94432 1.4678 10.238 2.11799 11.2281C2.27656 11.4695 2.50766 11.7005 2.8591 12.0518L2.90374 12.0965L2.94837 12.1411C3.29967 12.4925 3.53068 12.7237 3.77214 12.8822C4.76219 13.5324 6.05589 13.4976 7.04986 12.8223C7.29296 12.6572 7.52943 12.4206 7.89896 12.051L7.89897 12.051L7.94188 12.0081L8.5606 11.3894C8.75586 11.1941 8.75586 10.8775 8.5606 10.6823C8.36533 10.487 8.04875 10.487 7.85349 10.6823L7.23477 11.301C6.80777 11.728 6.6423 11.8903 6.48794 11.9951C5.81158 12.4546 4.95642 12.4636 4.32107 12.0464C4.17681 11.9516 4.02274 11.8012 3.61085 11.3894C3.19896 10.9775 3.0486 10.8234 2.95385 10.6791C2.53661 10.0438 2.54561 9.18863 3.00507 8.51227C3.10993 8.35791 3.27224 8.19244 3.69924 7.76544L4.31796 7.14672ZM9.62172 6.08558C9.81698 5.89032 9.81698 5.57373 9.62172 5.37847C9.42646 5.18321 9.10988 5.18321 8.91461 5.37847L5.37908 8.91401C5.18382 9.10927 5.18382 9.42585 5.37908 9.62111C5.57434 9.81637 5.89092 9.81637 6.08619 9.62111L9.62172 6.08558Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>Add a link</button><button
+                                class="flex text-sm items-center gap-x-2 p-2 text-[#717171] hover:text-[#222222] hover:bg-gray-100 rounded-md w-full"><input
+                                    type="file" id="file-upload" accept=".pdf,.png,.jpg,.jpeg"
+                                    class="hidden text-sm items-center gap-x-2 p-2 text-[#717171] hover:text-[#222222] hover:bg-gray-100 rounded-md w-full"><svg
+                                    width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="size-4">
+                                    <path
+                                        d="M7.81825 1.18188C7.64251 1.00615 7.35759 1.00615 7.18185 1.18188L4.18185 4.18188C4.00611 4.35762 4.00611 4.64254 4.18185 4.81828C4.35759 4.99401 4.64251 4.99401 4.81825 4.81828L7.05005 2.58648V9.49996C7.05005 9.74849 7.25152 9.94996 7.50005 9.94996C7.74858 9.94996 7.95005 9.74849 7.95005 9.49996V2.58648L10.1819 4.81828C10.3576 4.99401 10.6425 4.99401 10.8182 4.81828C10.994 4.64254 10.994 4.35762 10.8182 4.18188L7.81825 1.18188ZM2.5 9.99997C2.77614 9.99997 3 10.2238 3 10.5V12C3 12.5538 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2238 12.2239 9.99997 12.5 9.99997C12.7761 9.99997 13 10.2238 13 10.5V12C13 13.104 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2238 2.22386 9.99997 2.5 9.99997Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <li class="dnd-sortable-tree_simple_wrapper bg-white  border-slate-100 relative type-file w-full flex items-center  gap-x-3 p-1 shadow-sm shadow-[#ebebeb]  border-[1px] rounded-lg"
+                    style="transition: transform 200ms ease 0s; padding-left: 0px;">
+                    <div class="dnd-sortable-tree_simple_tree-item" role="button" tabindex="0" aria-disabled="false"
+                        aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <div class="dnd-sortable-tree_simple_handle" role="button" tabindex="0" aria-disabled="false"
+                            aria-roledescription="sortable" aria-describedby="DndDescribedBy-0"></div>
+                        <div class="flex flex-col"><span class="font-medium text-sm"></span><span
+                                class="text-xs text-gray-600">Add items to this module </span></div>
+                        <div class="three-dots flex items-center justify-center absolute right-0"><button class="text-gray-600 rounded-md p-2 hover:bg-gray-200 absolute right-5 transition-all duration-300
+                    bg-white 
+                    "><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="size-4">
+                                    <path
+                                        d="M8.625 2.5C8.625 3.12132 8.12132 3.625 7.5 3.625C6.87868 3.625 6.375 3.12132 6.375 2.5C6.375 1.87868 6.87868 1.375 7.5 1.375C8.12132 1.375 8.625 1.87868 8.625 2.5ZM8.625 7.5C8.625 8.12132 8.12132 8.625 7.5 8.625C6.87868 8.625 6.375 8.12132 6.375 7.5C6.375 6.87868 6.87868 6.375 7.5 6.375C8.12132 6.375 8.625 6.87868 8.625 7.5ZM7.5 13.625C8.12132 13.625 8.625 13.1213 8.625 12.5C8.625 11.8787 8.12132 11.375 7.5 11.375C6.87868 11.375 6.375 11.8787 6.375 12.5C6.375 13.1213 6.87868 13.625 7.5 13.625Z"
+                                        fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg></button></div>
+                    </div>
+                </li>
+                <div id="DndDescribedBy-0" style="display: none;">
+                    To pick up a draggable item, press the space bar.
+                    While dragging, use the arrow keys to move the item.
+                    Press space again to drop the item in its new position, or press escape to cancel.
+                </div>
+                <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true"
+                    style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%); white-space: nowrap;">
+                    Picked up bd654f44-b67d-4bdc-a9e1-7bd190d27009.</div>
+                <div class="flex items-center justify-center min-h-[70vh]">
+                    <div class="empty space-y-2 flex flex-col text-sm justify-center items-center"><img
+                            src="Resources.png" alt="Resources" class="size-40 object-cover">
+                        <div class="text-center text-lg font-semibold">Nothing added here yet</div>
+                        <div class="text-gray-600">Click on the [+] Add button to add items to this course</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
